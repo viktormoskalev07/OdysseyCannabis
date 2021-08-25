@@ -1,0 +1,26 @@
+@@include('html-templates/head.html',{
+    title:'Blog',
+    metadesc:'page with very interesting content'
+  })
+<main>
+
+<section class="blog">
+  <h1 style="display: none">Blog</h1>
+  <div class="container">
+    <div class="blog__page">
+      @@include('./html-templates/modules/block-blog.html',{
+        img:'talk-to-uncle-herb.png',
+        alt:'talk-to-uncle-herb',
+        title: 'Making the Most of Your Cannabis in Stoney Creek',
+        data:'May 28, 2021',
+      })
+      <div class="blog__page-wrap">
+
+      </div>
+    </div>
+  </div>
+</section>
+@@include('./html-templates/location.html')
+@@include('./html-templates/instagram.html')
+</main>
+@@include('./html-templates/footer.html',{})

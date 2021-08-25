@@ -1,0 +1,318 @@
+//Reset CSS
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+figure {
+	font-size: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: $transition;
+	&before,
+	&:after {
+		transition: $transition;
+	}
+	&:hover {
+		color: $hoverLink;
+		&:after {
+			background-color: $hoverLink;
+		}
+	}
+}
+
+//Default Style
+html {
+	font-family: $fontPrimary;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	min-height: 100vh;
+	font-size: $fontSizeBase;
+	line-height: $lineHeightMd;
+	color: $colorWhite;
+	background-color: $colorPrimary;
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+header,
+footer {
+	flex: 1 0 auto;
+}
+
+main {
+	flex: 1 0 auto;
+	overflow: hidden;
+}
+
+strong {
+	font-weight: $weightBold;
+}
+
+h1,
+.h1 {
+	font-size: 36px;
+	font-weight: $weightBold;
+	line-height: $lineHeightSm;
+	letter-spacing: 2px;
+	@include md {
+		margin-bottom: 40px;
+		font-size: 76px;
+	}
+}
+h2,
+.h2 {
+	margin-bottom: 60px;
+	font-size: 36px;
+	font-weight: $weightBold;
+	line-height: $lineHeightSm;
+	letter-spacing: $letterSpacingXxl;
+	@include md {
+		margin-bottom: 80px;
+		font-size: 48px;
+	}
+}
+h3,
+.h3 {
+	font-size: 32px;
+	line-height: $lineHeightSm;
+	letter-spacing: $letterSpacingLg;
+	@include md {
+		font-size: 48px;
+	}
+}
+h4,
+.h4 {
+	font-size: 30px;
+	line-height: $lineHeightLg;
+}
+h5,
+.h5 {
+	font-size: 24px;
+	font-weight: $weightBold;
+	line-height: $lineHeightLg;
+	letter-spacing: $letterSpacingSm;
+}
+h6,
+.h6 {
+	margin-bottom: 38px;
+	font-size: 20px;
+	font-weight: $weightMedium;
+	line-height: $lineHeightSm;
+	letter-spacing: $letterSpacingLg;
+	text-transform: uppercase;
+}
+p {
+	margin-bottom: 15px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+section,
+.section {
+	padding-top: 65px;
+	padding-bottom: 90px;
+}
+
+.mask {
+	position: relative;
+	&:before {
+		content: '';
+		background: $gradient;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+}
+
+.responsive-ratio {
+	height: 0;
+	position: relative;
+	overflow: hidden;
+	img,
+	iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&._9x6 {
+		padding-bottom: 66%;
+	}
+	&._1x1 {
+		padding-bottom: 100%;
+	}
+}
+.bg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}

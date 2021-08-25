@@ -1,0 +1,48 @@
+.brands {
+   &.container {
+      padding-left: 36px;
+      padding-right: 36px;
+      @include lg {
+         padding-left: 55px;
+         padding-right: 55px;
+      }
+   }
+   // h2,
+   .row {
+      margin-bottom: 30px;
+      @include lg {
+         margin-bottom: 50px;
+      }
+   }
+   &-item {
+      padding-left: 4px;
+      padding-right: 4px;
+      margin-bottom: 8px;
+      @include lg {
+         padding-left: 9px;
+         padding-right: 9px;
+         margin-bottom: 19px;
+      }
+   }
+   &-image {
+      display: flex;
+      position: relative;
+      border-radius: 3px;
+      box-shadow: $shadow;
+      &:before {
+         content: '';
+         display: block;
+         padding-bottom: 72%;
+      }
+      img {
+         width: 70%;
+         margin: auto;
+         @include lg {
+            width: auto;
+         }
+      }
+      @include lg {
+         border-radius: $radiusSm;
+      }
+   }
+}

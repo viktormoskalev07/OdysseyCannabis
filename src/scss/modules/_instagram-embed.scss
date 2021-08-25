@@ -1,0 +1,21 @@
+.instagram {
+	background-color: $colorSecondary;
+	&-container {
+		padding: 0 20px;
+	}
+	&-item {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
+	}
+	&-image {
+		border-radius: $radiusSm;
+	}
+	&-name {
+		margin-top: 20px;
+		font-size: 14px;
+		@include lg {
+			font-size: 20px;
+		}
+	}
+}
