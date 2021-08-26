@@ -1,5 +1,4 @@
 //dropdown
-
 function dropdown() {
 	const drop = document.querySelector('.dropdown__activator')
 	if (drop) {
@@ -10,8 +9,3 @@ function dropdown() {
 }
 
 dropdown()
-console.log(this)
-
-
-
-

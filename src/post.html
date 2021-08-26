@@ -1,74 +1,11 @@
-@@include('html-templates/head.html',{
-    title:'Article',
-    metadesc:'page with very interesting content'
-  })
- <main>
-  <section class="blog-article blog-article__hero mask">
-    <figure>
-      <img src="images/article/bg-article.jpg" alt="ouid bong background">
-    </figure>
-    <div class="blog-article__hero-title">
-      <time>May 28, 2021</time>
-      <h1 class="sub-title">Making the Most of Your Cannabis in Stoney Creek</h1>
-      <h2 class="title title_white">Uncle Herbs is the Gateway to Good Times</h2>
-    </div>
-  </section>
-  <section class="blog-article__post">
-    <div class="container blog-article__wrapper">
-      <div class="blog-article__posts">
-        @@include('./html-templates/blog-article-item.html',{
-          title:'Let Our Stoney Creek Cannabis Store Elevate Your Next Adventure',
-          textFirst:'Cannabis products can offer a plethora of incredible experiences, depending on what type of experience you’re trying to achieve.<br> Are you in the market for weed accessories like vape pens, weed pipes, or grinders? Maybe you’ve been interested in trying some cannabis oils or tasty edibles? Or perhaps, you’re a traditionalist, and all you need is some dried cannabis flower and rolling papers?',
-          textSecond:'No matter what type of cannabis products or accessories you’re looking for, we’ve got something in stock that’s sure to make you smile. That’s all part of our mission to destigmatize cannabis in all its forms, through our pillars of education, community, sustainability, and diversity!',
-          textThird:'More than that, we know our community. We love having a location in Stoney Creek. The people are amazing, and there are so many places you can enjoy, if you take the time to explore a bit.<br>To save you some time, we’ve put together a list of some of our favourite local gems. This way, you can get a jumpstart on planning your next post-cannabis adventure.',
-          img:'street.png',
-          alt:'street',
-        })
-        @@include('./html-templates/blog-article-item.html',{
-          title:'Stoney Creek Recreation Centre',
-          textFirst:'The heat of the summer got you feeling drained? The Stoney Creek Recreation Centre has got you covered. With lots of fun, relaxing indoor amenities to enjoy, there are tons of ways that you can make the most of a day inside and save yourself the sunscreen.',
-          textSecond:'Take one of our convenient vape pens with you, and you can enjoy stepping outside for a few puffs at your leisure, without any of the smell associated with smoking bowls or joints. If you want to take it easy, we recommend leaning towards indica-dominant vape pens, which promote calmness and relaxation.',
-          textThird:'Plan your visit during public swim times, and you can enjoy a dip while you’re there. Is there a better way to spend a swelteringly hot summer day?',
-          img:'stoney-creek-recreation-centre.png',
-          alt:'stoney-creek-recreation-centre',
-        })
-        @@include('./html-templates/blog-article-item.html',{
-          title:'Fifty Points Conservation Area',
-          textFirst:'Of course, when the weather is nice, there’s nothing quite like basking in Stoney Creek’s natural beauty. One of the most gorgeous outdoor venues is the Fifty Points Conservation Area.',
-          textSecond:'There’s so much to do at Fifty Points, there’s no way we could discuss them all in detail here. If you’re looking for great summer swimming, fishing, birding, picnicking, hiking, boating, or dining spots, you can literally find everything here.',
-          textThird:'Plus, with lots of big, open spaces, you can comfortably grab your grinder, and your weed pipe or rolling papers, without fear of judgement from other visitors. We’d recommend bringing a solid 50/50 hybrid cannabis flower for these types of adventures, since you never know what kind of fun you might get up to!',
-          img:'fifty-points-conservation-area.png',
-          alt:'fifty-points-conservation-area',
-        })
-        @@include('./html-templates/blog-article-item.html',{
-          title:'Ridge Road Estate Winery',
-          textFirst:'Are you passionate about wine, as well as cannabis? You need to stop by and visit Ridge Road Estate Winery. Not only do they have incredible wines to sample (and buy some to bring home with you), but they also have absolutely mouthwatering menu options, if you’re looking to grab a bite while you’re exploring the facilities.',
-          textSecond:'Of course, if you’re going to be enjoying cannabis products, it’s always a good idea to be careful about how much alcohol you consume. You don’t want to overindulge. It could ruin your entire experience.',
-          textThird:'With that in mind, we recommend trying some of our delicious sativa-dominant edibles when you’re planning a winery visit. Our edibles are heavily regulated, and every product package clearly lists the dosage of each edible inside. This allows you to enjoy a controlled, energizing body buzz while you stroll the grounds, without overwhelming your senses.',
-          img:'ridge-road-estate-winery.png',
-          alt:'ridge-road-estate-winery',
-        })
-        @@include('./html-templates/blog-article-item.html',{
-          title:'Josh Tiessen Studio Gallery',
-          textFirst:'Sometimes the most enjoyable cannabis experiences are the ones that stimulate our creative senses.',
-          textSecond:'If you’re looking to flex your creative muscle, after enjoying some of our wonderful weed products and accessories, you should check out the Josh Tiessen Studio Gallery. Attached to the back of his 80-year-old Tudor-style home, this gallery is a rare opportunity to steal a glimpse into the work that goes into creating one of Josh’s gorgeous paintings.',
-          textThird:'Once you’ve visited our cannabis store in Stoney Creek, take some time and peek into the gallery (during business hours, of course). You might get lucky and get the opportunity to watch the artist himself working on his next masterpiece.',
-          img:'josh-tiessen-studio-gallery.png',
-          alt:'josh-tiessen-studio-gallery',
-        })
-      </div>
-      <div class="blog-article__socials">
-        <ul>
-          <p>share:</p>
-          <li><button class="push-share" data-id="fb">facebook</button></li>
-          <li><button class="push-share" data-id="tw">twitter</button></li>
-          <li><button class="push-share" data-id="medi">medium</button></li>
-        </ul>
-      </div>
-      <div id="social-info" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>"
-        data-desc="description" data-title=" title"></div>
-    </div>
-  </section>
+@@include('html-templates/head.html',{ title:'Article', metadesc:'page with very interesting content'})
+
+<main class="single-post-page">
+
+
+
   @@include('./html-templates/location.html')
- </main>
-@@include('./html-templates/footer.html',{})
+
+</main>
+
+@@include('./html-templates/footer.html')

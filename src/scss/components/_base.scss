@@ -145,6 +145,10 @@ a {
 	}
 }
 
+time {
+	display: block;
+}
+
 //Default Style
 html {
 	font-family: $fontPrimary;
@@ -177,7 +181,7 @@ body {
 
 header,
 footer {
-	flex: 1 0 auto;
+	flex: 0 0 auto;
 }
 
 main {
@@ -261,7 +265,7 @@ section,
 
 .mask {
 	position: relative;
-	&:before {
+	&:after {
 		content: '';
 		background: $gradient;
 		position: absolute;
@@ -315,4 +319,10 @@ section,
 .centered {
 	margin-left: auto;
 	margin-right: auto;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
 }

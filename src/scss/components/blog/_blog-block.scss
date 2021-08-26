@@ -1,14 +1,19 @@
 .blog {
 	&-post {
+		margin-bottom: 40px;
+		@extend .col-md-12;
+		&:not(:first-child) {
+			@extend .col-md-6;
+		}
+	}
+	&-link {
 		display: block;
-		padding-top: 61%;
-		padding-bottom: 30px;
-		position: relative;
+		padding-top: 210px;
 		border-radius: $radiusMd;
+		position: relative;
 		overflow: hidden;
-		@include lg {
-			padding-top: 28.2%;
-			padding-bottom: 40px;
+		@include md {
+			padding-top: 310px;
 		}
 		&:hover {
 			h2 {
@@ -22,12 +27,17 @@
 		}
 	}
 	&-content {
+		width: 100%;
+		padding: 20px;
 		position: relative;
 		z-index: 1;
+		@include md {
+			padding: 40px;
+		}
 		h2 {
 			margin-bottom: 30px;
 			transition: $transition;
-			@include lg {
+			@include md {
 				margin-bottom: 0;
 			}
 		}
@@ -40,6 +50,7 @@
 	&-image {
 		position: absolute;
 		top: 0;
+		bottom: 0;
 		left: 50%;
 		background: $gradient;
 		transform: translateX(-50%);
@@ -47,6 +58,87 @@
 			height: 100%;
 			max-width: none;
 			transition: $transition;
+		}
+	}
+	&-main {
+		.blog-post {
+			.blog-link {
+				@include md {
+					padding-top: 450px;
+				}
+			}
+			&:not(:first-child) {
+				.blog-link {
+					padding-top: 0;
+					display: flex;
+					@include md {
+						display: block;
+						padding-top: 450px;
+					}
+				}
+				.blog-image {
+					flex: 0 0 33.3333333333%;
+					max-width: 33.3333333333%;
+					position: static;
+					transform: none;
+					@include sm {
+						flex: 0 0 41.6666666667%;
+						max-width: 41.6666666667%;
+					}
+					@include md {
+						max-width: none;
+						position: absolute;
+						transform: translateX(-50%);
+					}
+					img {
+						max-width: 100%;
+						@include md {
+							max-width: none;
+						}
+					}
+				}
+				.blog-content {
+					flex: 0 0 66.6666666667%;
+					max-width: 66.6666666667%;
+					padding: 15px;
+					@include sm {
+						padding: 20px;
+						flex: 0 0 58.3333333333%;
+						max-width: 58.3333333333%;
+					}
+					@include md {
+						max-width: none;
+					}
+					h2 {
+						font-size: 18px;
+						@include md {
+							font-size: 36px;
+						}
+					}
+				}
+			}
+		}
+		.blog-content {
+			padding: 30px;
+			h2 {
+				font-size: 20px;
+				letter-spacing: normal;
+				@include md {
+					font-size: 36px;
+					letter-spacing: $letterSpacingLg;
+				}
+			}
+		}
+		.blog-data {
+			margin-bottom: 0;
+			font-size: 14px;
+			color: #647286;
+			@include md {
+				font-size: 20px;
+			}
+		}
+		.btn-lg {
+			margin-top: 20px;
 		}
 	}
 }

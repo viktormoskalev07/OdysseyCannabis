@@ -1,10 +1,10 @@
 @@include('html-templates/head.html',{
-	title:'Odyssey',
+	title:'Homepage',
 	metadesc:'page with very interesting content'
 })
 
 <link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
-<main class="main">
+<main class="home-page">
 
   @@include('./html-templates/homepage/main-hero.html')
   @@include('./html-templates/location.html')
@@ -12,16 +12,21 @@
   @@include('./html-templates/homepage/about-us.html')
 
   <section class="blog container text-center">
-	 <a href="post.html" class="blog-post dark-bg" title="Blog-article">
-		<div class="blog-content">
-				<h2 class="h3 col-lg-12">Make the Most of Your Visit to Odyssey</h2>
-				<p class="blog-data h6">May 28, 2021</p>
-				<button class="btn-lg">Read article</button>
-		</div>
-		<figure class="blog-image">
-			<img src="./images/blog/post-1.jpg" alt="alt">
-		</figure>
-	 </a>
+	<div class="row-center">
+		<div class="blog-post">
+		  <a href="post.html" class="blog-link dark-bg" title="Blog-article">
+			 <div class="blog-content">
+					 <h2 class="h3">Make the Most of Your Visit to Odyssey</h2>
+					 <time class="blog-data h6" datetime="MM-dd-yyyy">May 28, 2021</time>
+					 <button class="btn-lg">Read article</button>
+			 </div>
+			 <figure class="blog-image mask">
+				 <img src="./images/blog/post-1.jpg" alt="alt">
+			 </figure>
+		  </a>
+	  </div>
+	</div>
+
 	 <a href="blog.html" class="large-link">All Articles →</a>
   </section>
 

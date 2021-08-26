@@ -1,14 +1,33 @@
 @@include('html-templates/head.html',{
-    title:'Faq',
-    metadesc:'page with very interesting content'
-  })
+	title:'Faq',
+	metadesc:'page with very interesting content'
+})
 
-<link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
+<main class="faq-page">
+	<section class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="hero-content col-lg-8">
+				<p class="hero-subtitle h6">Customers Come First at Odyssey Cannabis</p>
+				<h1 class="hero-title h2">The Most Trusted Cannabis Store in Hamilton</h1>
+				<div class="row">
+					<div class="hero-text col-lg-11">
+						<p>Odyssey is here to ensure that you always get the answers that you're looking for when you're shopping for cannabis products.</p>
+						<p>Education and clear communication are at the core of our mission to serve the community as Hamilton's preferred cannabis store. With that in mind, let's discuss some of your FAQs, and get you the answers you're seeking:</p>
+					</div>
+				</div>
+			</div>
+			<figure class="hero-image">
+				<img loading="lazy" src="./images/hero/hero-faq.jpg" alt="hero-img" />
+			</figure>
+		</div>
+	</div>
+</section>
 
-<main class="main">
-    @@include('./html-templates/accordion.html')
-    @@include('./html-templates/location.html')
+	@@include('./html-templates/accordion.html')
+	@@include('./html-templates/accent.html')
+	@@include('./html-templates/location.html')
+
 </main>
 
-@@include('./html-templates/footer.html',{
-}) 
+@@include('./html-templates/footer.html')
