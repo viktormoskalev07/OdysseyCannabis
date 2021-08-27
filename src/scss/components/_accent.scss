@@ -44,6 +44,13 @@
 			right: 0;
 		}
 	}
+	& + .brands {
+		padding-top: 0;
+		@include lg {
+			padding-top: 60px;
+
+		}
+	}
 }
 .faq-page {
 	.accent {

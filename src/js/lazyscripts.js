@@ -24,8 +24,8 @@ window.addEventListener('load', function () {
 			if (mediaQuery2) {
 				swiperLoadingDelay = addtime
 			}
-			addScript(templateUrl + '/js/swiper-min.js', swiperLoadingDelay).addEventListener('load', () => {
-				addScript(templateUrl + '/js/slider-init.js', 1)
+			addScript(templateUrl + 'js/swiper-min.js', swiperLoadingDelay).addEventListener('load', () => {
+				addScript(templateUrl + 'js/slider-init.js', 1)
 			})
 			//swiper loading only if swiper delay datatime > 0
 		}

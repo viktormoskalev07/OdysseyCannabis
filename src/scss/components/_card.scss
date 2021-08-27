@@ -1,4 +1,4 @@
-.faq {
+.card {
    &-item {
        padding-left: 15px;
        padding-right: 15px;
@@ -10,6 +10,7 @@
       min-height: 410px;
       justify-content: space-around;
       padding: 30px 50px;
+      line-height: $lineHeightLg;
       border-radius: $radiusSm;
    }
    .large-link {
