@@ -1,0 +1,54 @@
+.hero {
+	padding-top: 100px;
+	padding-bottom: 135px;
+	position: relative;
+	&-content {
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		@include lg {
+			text-align: left;
+		}
+	}
+	&-subtitle {
+		letter-spacing: 1.8px;
+	}
+	&-title {
+		padding-bottom: 50%;
+		@include lg {
+			padding-bottom: 0;
+		}
+	}
+	&-text {
+		margin-bottom: 35px;
+		font-size: 18px;
+		line-height: 1.5;
+		letter-spacing: $letterSpacingMd;
+	}
+	&-main {
+		.hero-image {
+			width: 100%;
+			@include lg {
+				left: auto;
+				right: -300px;
+			}
+		}
+	}
+	&-image {
+		max-width: 600px;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		z-index: 0;
+		transform: translateX(-50%);
+		@include md {
+			max-width: 1309px;
+		}
+		@include lg {
+			top: auto;
+			left: auto;
+			right: 0;
+			transform: none;
+		}
+	}
+}

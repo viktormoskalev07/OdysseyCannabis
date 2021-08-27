@@ -1,0 +1,16 @@
+.wpcf7 {
+	& form .ajax-loader,
+	& form .wpcf7-response-output {
+		display: none;
+	}
+	.wpcf7-form-control-wrap {
+		input {
+			width: 100%;
+		}
+	}
+	form.invalid {
+		.wpcf7-not-valid {
+			box-shadow: 1px 0 8px 1px #ec3c06;
+		}
+	}
+}

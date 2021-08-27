@@ -1,0 +1,79 @@
+.location {
+	text-align: center;
+	@include lg {
+		text-align: left;
+	}
+	&-wrap {
+        padding: 25px;
+        overflow: hidden;
+		border-radius: $radiusLg;
+		@include lg {
+            padding: 77px 50px;
+		}
+	}
+	&-content {
+		position: relative;
+		z-index: 1;
+	}
+	&-map {
+		h2 {
+			display: block;
+			margin-bottom: 30px;
+			font-size: 32px;
+			@include lg {
+				display: none;
+			}
+		}
+		.responsive-ratio {
+			margin-bottom: 60px;
+			border-radius: 10px;
+			@include lg {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&-info {
+		font-size: 20px;
+		line-height: 1.5;
+		& > *:not(:last-child) {
+			margin-bottom: 25px;
+		}
+		h2 {
+			display: none;
+			@include lg {
+				display: block;
+			}
+		}
+		address {
+			font-weight: $weightMedium;
+			a {
+				color: $colorPrimary;
+				&:hover {
+					color: darken($colorPrimary, 20%);
+				}
+			}
+		}
+		strong {
+			display: block;
+			font-size: 26px;
+		}
+	}
+	&-schedule {
+		font-weight: $weightBold;
+	}
+	&-image {
+		position: absolute;
+		right: -110px;
+		bottom: -80px;
+		z-index: 0;
+		svg {
+			fill: #e6f1fe;
+            width: 70%;
+            height: 70%;
+            @include lg {
+                width: auto;
+                height: auto;
+			}
+		}
+	}
+}

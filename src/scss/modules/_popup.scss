@@ -1,0 +1,26 @@
+.popup {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	background-color: rgba($colorBlack, 0.8);
+	&-form {
+		width: 600px;
+		max-width: 95%;
+		padding: 50px 20px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: $colorWhite;
+		color: $colorSecondary;
+		border-radius: 15px;
+	}
+	&-content {
+		margin-bottom: 50px;
+	}
+}

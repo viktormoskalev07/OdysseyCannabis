@@ -1,0 +1,24 @@
+                            @@include('i/img.html',{
+                                src:'image-texture-2',
+                                type:'jpg',
+                                alt:'texture', 
+                                priority:'0',
+                                folder:'3.3_wedding_photo_books',
+                              }) 
+
+        @@include('../i/resp-img2.html',{
+          src:'wedding-books',
+          type:'jpg', 
+          alt:'Wedding book showing happy couple on cover', 
+          priority:'2',
+          width:'788',
+          height:'713',
+          folder:'3.3_wedding_photo_books',
+        })
+
+
+                    
+
+              npm run webp
+                          folder 
+                          './dist/images/towebp';

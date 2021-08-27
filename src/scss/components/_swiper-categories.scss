@@ -1,0 +1,36 @@
+.swiper-categories {
+	// margin-right: -20px;
+	// @include sm {
+	// 	margin-right: 0;
+	// }
+	.swiper-wrapper {
+		@include lg {
+			transform: none !important;
+			display: flex;
+			flex-wrap: wrap;
+         justify-content: center;
+		}
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: -30px;
+		background: #000;
+		width: 40px;
+		height: 40px;
+		border-radius: 50px;
+		&::after {
+			// color: $accentColor;
+			font-size: 20px;
+		}
+		@include lg {
+			display: none;
+		}
+	}
+	.swiper-button-prev {
+		left: auto;
+		right: 60px;
+	}
+}
+.swiper-container {
+	overflow: visible !important;
+}

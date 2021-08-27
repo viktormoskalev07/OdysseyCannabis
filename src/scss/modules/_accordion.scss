@@ -1,0 +1,38 @@
+.accordion {
+	&-header {
+		border-top: 2px solid $colorBlack;
+		&:last-child {
+			border-bottom: 2px solid $colorBlack;
+		}
+		padding: 30px 50px 20px 0;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+		&::after,
+		&::before {
+			content: '';
+			right: 0;
+			transition: 0.3s;
+			font-size: 0;
+			position: absolute;
+			width: 33px;
+			height: 0px;
+			top: calc(50% - 1px);
+			border-top: 2px solid $colorBlack;
+		}
+		&::before {
+			transform: rotate(-90deg);
+		}
+		.accordion-active &::before {
+			transform: rotate(0deg);
+		}
+		.accordion-active &::after {
+			transform: rotate(180deg);
+		}
+	}
+	&-content {
+		height: 0;
+		transition: 0.5s ease;
+		overflow: hidden;
+	}
+}

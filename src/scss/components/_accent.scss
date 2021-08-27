@@ -1,0 +1,53 @@
+.accent {
+	&-content {
+		padding-top: 80px;
+		padding-bottom: 260px;
+		color: $colorPrimary;
+		font-weight: $weightBold;
+		@media (min-width: 1920px) {
+			padding-bottom: 22%;
+		}
+      p {
+         margin-bottom: 10px;
+         @include lg {
+            margin-bottom: 25px;
+         }
+      }
+		h2 {
+			font-size: 36px;
+			line-height: 1;
+		}
+	}
+	.row {
+		position: relative;
+	}
+	&-image {
+		width: 100%;
+		margin-bottom: 50px;
+		padding-bottom: 19%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@include lg {
+			margin-bottom: 10px;
+		}
+	}
+	&-bg {
+		padding-bottom: 85%;
+		background-color: $colorBlack;
+		@include lg {
+			padding-bottom: 0;
+			width: 50%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+.faq-page {
+	.accent {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+}

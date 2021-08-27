@@ -1,0 +1,126 @@
+.header-nav {
+	.menu {
+		display: block;
+		max-height: 0;
+		text-align: center;
+		overflow: hidden;
+		pointer-events: none;
+		letter-spacing: $letterSpacingMd;
+		opacity: 0;
+		transition: 0.4s;
+		@include nav-desktop {
+			display: flex;
+			justify-content: flex-end;
+			opacity: 1;
+			pointer-events: all;
+			max-height: 100%;
+		}
+		&-item {
+			margin: 5% 0;
+			transform: translateX(+100%);
+			transition: 0.5s;
+			&:nth-child(2n) {
+				transform: translateX(-100%);
+			}
+			@include nav-desktop {
+				display: flex;
+				margin: 0;
+				background-color: transparent;
+				transform: none;
+				&:nth-child(2n) {
+					transform: none;
+				}
+				&:last-child {
+					a {
+						padding: 18px 50px;
+						text-transform: uppercase;
+						background-color: $colorSecondary;
+						border-radius: $radiusButton;
+						&:hover {
+							background-color: $hoverButton;
+						}
+					}
+				}
+				& + .menu-item {
+					margin-left: 4.5%;
+				}
+			}
+			a {
+				display: block;
+				margin: auto;
+				padding: 15px;
+				font-size: 36px;
+				font-weight: $weightBold;
+				line-height: $lineHeightMd;
+				text-transform: uppercase;
+				@include nav-desktop {
+					font-size: 16px;
+					line-height: $lineHeightSm;
+					text-transform: none;
+				}
+			}
+		}
+	}
+}
+
+.menu-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	background-color: transparent;
+	border: none;
+	@include nav-desktop {
+		display: none;
+	}
+	span {
+		transition: 0.2s;
+		background-color: $colorWhite;
+		height: 5px;
+		width: 100%;
+	}
+	span + span {
+		margin-top: 10px;
+	}
+}
+@include nav-mobile {
+	.header {
+		padding: 10px 0;
+		&.nav-open {
+			.menu {
+				height: auto;
+				opacity: 1;
+				pointer-events: all;
+				width: 100%;
+				z-index: 10;
+				flex-direction: column;
+				max-height: 100vh;
+				&-item {
+					font-size: 32px;
+					transform: none;
+					&:last-child {
+						order: -1;
+					}
+				}
+				&-icon {
+					span {
+						margin: 0 !important;
+						&:nth-child(1) {
+							transform: translateY(100%) rotate(-45deg);
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							width: 0;
+						}
+						&:nth-child(3) {
+							transform: translateY(-100%) rotate(45deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}

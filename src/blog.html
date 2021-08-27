@@ -1,0 +1,30 @@
+@@include('html-templates/head.html',{ title:'Blog', metadesc:'page with very interesting content' })
+
+<main class="blog-page">
+	<section class="blog-main container text-center">
+		<div class="row-center text-left">
+
+         @@include('html-templates/modules/blog-item.html', {
+            title: 'Make the Most of Your Visit to Odyssey',
+            data: 'May 28, 2021',
+            img: 'post-1.jpg'
+         })
+         @@include('html-templates/modules/blog-item.html', {
+            title: 'Make the Most of Your Visit to Odyssey',
+            data: 'May 28, 2021',
+            img: 'post-2.jpg'
+         })
+         @@include('html-templates/modules/blog-item.html', {
+            title: 'Make the Most of Your Visit to Odyssey',
+            data: 'May 28, 2021',
+            img: 'post-3.jpg'
+         })
+
+		</div>
+      <a href="#" class="btn-lg">Show more</a>
+	</section>
+
+	@@include('./html-templates/location.html')
+</main>
+
+@@include('./html-templates/footer.html')
