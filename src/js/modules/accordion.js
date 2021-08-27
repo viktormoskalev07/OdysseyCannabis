@@ -25,12 +25,27 @@ function accordionInit(accordion) {
 
 		const toggle_item = item => {
 			const body = item.querySelector('.accordion-content')
+			const text = item.querySelector('.accordion-text')
+
 			if (item.classList.contains('accordion-active')) {
 				item.classList.remove('accordion-active')
 				body.style.height = '0px'
+
+				window.addEventListener('resize', () => {
+					body.style.height = '0px'
+				})
 			} else {
 				body.style.height = body.scrollHeight + 'px'
 				item.classList.add('accordion-active')
+
+				window.addEventListener('resize', () => {
+					if (text.style.height > body.style.height) {
+						body.style.height = body.scrollHeight + 'px'
+					} else {
+						body.style.height = text.scrollHeight + 'px'
+
+					}
+				})
 			}
 		}
 	})

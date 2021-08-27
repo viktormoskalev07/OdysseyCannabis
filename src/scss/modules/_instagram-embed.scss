@@ -1,7 +1,10 @@
 .instagram {
 	background-color: $colorSecondary;
 	&-container {
-		padding: 0 20px;
+		padding: 0 10px;
+		@include lg {
+			padding: 0 20px;
+		}
 	}
 	&-item {
 		padding-left: 10px;

@@ -210,19 +210,20 @@ h2,
 	font-size: 36px;
 	font-weight: $weightBold;
 	line-height: $lineHeightSm;
-	letter-spacing: $letterSpacingXxl;
 	@include md {
 		margin-bottom: 80px;
 		font-size: 48px;
+		line-height: $lineHeightSm;
+		letter-spacing: $letterSpacingXxl;
 	}
 }
 h3,
 .h3 {
 	font-size: 32px;
-	line-height: $lineHeightSm;
-	letter-spacing: $letterSpacingLg;
 	@include md {
 		font-size: 48px;
+		line-height: $lineHeightSm;
+		letter-spacing: $letterSpacingLg;
 	}
 }
 h4,
@@ -239,12 +240,15 @@ h5,
 }
 h6,
 .h6 {
-	margin-bottom: 38px;
 	font-size: 20px;
+	margin-bottom: 15px;
 	font-weight: $weightMedium;
 	line-height: $lineHeightSm;
 	letter-spacing: $letterSpacingLg;
 	text-transform: uppercase;
+	@include md {
+		margin-bottom: 38px;
+	}
 }
 p {
 	margin-bottom: 15px;
@@ -259,8 +263,12 @@ img {
 
 section,
 .section {
-	padding-top: 65px;
-	padding-bottom: 90px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	@include lg {
+		padding-top: 65px;
+		padding-bottom: 90px;
+	}
 }
 
 .mask {

@@ -1,8 +1,5 @@
 .swiper-categories {
-	// margin-right: -20px;
-	// @include sm {
-	// 	margin-right: 0;
-	// }
+	padding-top: 20px !important;
 	.swiper-wrapper {
 		@include lg {
 			transform: none !important;
@@ -13,14 +10,13 @@
 	}
 	.swiper-button-prev,
 	.swiper-button-next {
-		top: -30px;
+		top: -10px;
 		background: #000;
-		width: 40px;
-		height: 40px;
+		width: 33px;
+		height: 33px;
 		border-radius: 50px;
 		&::after {
-			// color: $accentColor;
-			font-size: 20px;
+			font-size: 18px;
 		}
 		@include lg {
 			display: none;
@@ -28,7 +24,10 @@
 	}
 	.swiper-button-prev {
 		left: auto;
-		right: 60px;
+		right: 45px;
+	}
+	.swiper-button-next {
+		right: 0;
 	}
 }
 .swiper-container {

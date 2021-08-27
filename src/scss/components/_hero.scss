@@ -1,0 +1,53 @@
+.hero {
+	padding-top: 40px;
+	position: relative;
+	overflow: hidden;
+	@include lg {
+		padding-top: 100px;
+		padding-bottom: 135px;
+	}
+	&-content {
+		@include lg {
+			text-align: left;
+			position: static;
+		}
+	}
+	&-subtitle {
+		letter-spacing: 1.8px;
+	}
+	&-text {
+		margin-bottom: 35px;
+		font-size: 18px;
+		line-height: 1.5;
+		letter-spacing: $letterSpacingMd;
+	}
+	&-content,
+	&-subtitle,
+	&-title,
+	&-text {
+		@include lg {
+			position: relative;
+			z-index: 1;
+		}
+	}
+	&-image {
+		@include lg {
+			max-width: 660px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: translate(80%, -10%);
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&.hero-main {
+		.hero-image {
+			@include lg {
+				max-width: 800px;
+				transform: translateX(70%);
+			}
+		}
+	}
+}

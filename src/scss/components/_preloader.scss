@@ -7,8 +7,7 @@
   overflow: hidden;
   background: $colorPrimary;
   z-index: 10;
-
-  &__image {
+  &-image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,8 +18,7 @@
     text-align: center;
     animation: preloader-rotate 1s infinite linear;
   }
-
-  &__caption {
+  &-caption {
     text-transform: uppercase;
     font-style: italic;
     position: absolute;
@@ -30,19 +28,15 @@
     transform: translateX(-50%);
   }
 }
-
-
-@keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .loaded_hiding .preloader {
   transition: $transition;
   opacity: 0;
 }
-
 .loaded .preloader {
   display: none;
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
