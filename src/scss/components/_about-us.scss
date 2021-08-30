@@ -54,6 +54,18 @@
 	@include lg {
 		padding: 70px 25px 120px;
 	}
+	&.no-resize {
+			padding: 30px 15px 20px;
+		&::after {
+			content: none;
+		}
+		@include lg {
+			padding: 60px;
+		}
+		.btn-lg {
+			margin-top: 30px;
+		}
+	}
 }
 .content {
 	height: 200px;

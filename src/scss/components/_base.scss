@@ -194,27 +194,54 @@ strong {
 }
 
 h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+ h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: $fontSecondary;
+	font-weight: $weightBold;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h6,
+.h6 {
+	line-height: $lineHeightSm;
+}
+
+h4,
+.h4,
+h5,
+.h5 {
+	line-height: $lineHeightLg;
+}
+
+h1,
 .h1 {
 	font-size: 36px;
-	font-weight: $weightBold;
-	line-height: $lineHeightSm;
-	letter-spacing: 2px;
 	@include md {
 		margin-bottom: 40px;
-		font-size: 76px;
+		font-size: 72px;
 	}
 }
 h2,
 .h2 {
 	margin-bottom: 60px;
 	font-size: 36px;
-	font-weight: $weightBold;
-	line-height: $lineHeightSm;
 	@include md {
 		margin-bottom: 80px;
 		font-size: 48px;
-		line-height: $lineHeightSm;
-		letter-spacing: $letterSpacingXxl;
 	}
 }
 h3,
@@ -222,29 +249,20 @@ h3,
 	font-size: 32px;
 	@include md {
 		font-size: 48px;
-		line-height: $lineHeightSm;
-		letter-spacing: $letterSpacingLg;
 	}
 }
 h4,
 .h4 {
 	font-size: 30px;
-	line-height: $lineHeightLg;
 }
 h5,
 .h5 {
 	font-size: 24px;
-	font-weight: $weightBold;
-	line-height: $lineHeightLg;
-	letter-spacing: $letterSpacingSm;
 }
 h6,
 .h6 {
 	font-size: 20px;
 	margin-bottom: 15px;
-	font-weight: $weightBold;
-	line-height: $lineHeightSm;
-	letter-spacing: $letterSpacingLg;
 	text-transform: uppercase;
 	@include md {
 		margin-bottom: 38px;

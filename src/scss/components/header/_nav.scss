@@ -5,7 +5,7 @@
 		text-align: center;
 		overflow: hidden;
 		pointer-events: none;
-		letter-spacing: $letterSpacingMd;
+		font-family: $fontSecondary;
 		opacity: 0;
 		transition: 0.4s;
 		@include nav-desktop {

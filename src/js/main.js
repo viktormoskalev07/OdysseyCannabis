@@ -59,42 +59,29 @@ if (document.querySelector('.preloader')) {
 
 
 // Show more/less button
-let toggles = document.getElementsByClassName('content-btn')
-let contentDiv = document.getElementsByClassName('content')
-let contentWrap = document.getElementsByClassName('content-wrap')
+let toggles = document.querySelector('.content-btn')
+let contentDiv = document.querySelector('.content')
+let contentWrap = document.querySelector('.content-wrap')
 let contentHeight = 200
 
-for (let i = 0; i < toggles.length; i++) {
-	if (contentDiv[i].scrollHeight > 200) {
-		toggles[i].classList.add('show')
-	} else {
-		toggles[i].classList.remove('show')
-		toggles[i].classList.add('hide')
-
-		contentDiv[i].style.height = 'auto'
-	}
-
-	toggles[i].addEventListener('click', () => {
-		if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
-			contentDiv[i].style.height = contentDiv[i].scrollHeight + 'px'
-
-			toggles[i].classList.toggle('activeBtn');
-		} else {
-			contentDiv[i].style.height = contentHeight + 'px'
-
-			toggles[i].classList.toggle('activeBtn');
-			contentDiv[i].classList.toggle('heightActive')
-		}
-
-		for (let j = contentHeight; j < contentDiv.length; j++) {
-			if (j !== i) {
-				contentDiv[j].style.height = contentHeight
-
-        		toggles[i].classList.toggle('activeBtn');
+if (contentWrap.hasChildNodes()) {
+	let children = contentWrap.childNodes
+	if (children.length >= 3) {
+		toggles.classList.add('show')
+		toggles.addEventListener('click', () => {
+			if (parseInt(contentDiv.style.height) != contentDiv.scrollHeight) {
+				contentDiv.style.height = contentDiv.scrollHeight + 'px'
+				toggles.classList.toggle('activeBtn');
+			} else {
+				contentDiv.style.height = contentHeight + 'px'
+				toggles.classList.toggle('activeBtn');
+				contentDiv.classList.toggle('heightActive')
 			}
-		}
-	})
+		})
+	} else {
+		toggles.classList.remove('show')
+		toggles.classList.add('hide')
+		contentDiv.style.height = 'auto'
+	}
 }
 // Show more/less button
-
-

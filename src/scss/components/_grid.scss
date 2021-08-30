@@ -5,10 +5,11 @@
 	padding-left: 20px;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.container-fluid {
-	width: 100%;
+	&-fluid {
+		@extend .container;
+		max-width: none;
+		width: 100%;
+	}
 }
 
 .row {
@@ -129,9 +130,3 @@
 @include cols(md, $md);
 @include cols(lg, $lg);
 @include cols(xl, $xl);
-
-// .mt-0-lg {
-// 	@include lg {
-// 		margin-top: 0;
-// 	}
-// }
