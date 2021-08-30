@@ -1,11 +1,106 @@
 @@include('html-templates/head.html',{ title:'Article', metadesc:'page with very interesting content'})
 
 <main class="single-post-page">
+	<section class="hero hero-blog text-center">
+		<div class="container-fluid">
+			<div class="blog-inner dark-bg">
+				<figure class="blog-image mask">
+					<img src="./images/blog/post-1.jpg" alt="alt" loading="lazy" />
+				</figure>
+				<div class="blog-content col-lg-7 centered">
+					<time class="blog-data" datetime="dd-mm-yyyy">May 28, 2021</time>
+					<h2 class="blog-title h2">Make the Most of Your Visit to Odyssey</h2>
+					<p class="blog-subtitle h6 col-lg-10 centered">Explore All the Wonderful Things Hamilton Has to Offer</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="articles container">
+		<div class="row">
+			<div class="articles-content col-lg-9">
+				<p>Hamilton is a beautiful, broad-spanning city with lots of different areas to explore, and tons of history to immerse yourself within.</p>
+				<p>
+					Odyssey cannabis is not only Hamilton's favourite weed dispensary, but we're also a part of the local community of Hamilton. As such, we've made it part of our mission to ensure that local
+					cannabis users can make the most of their cannabis products, by finetuning their purchases to fit with some fun plans they may have planned.
+				</p>
+				<p>
+					With that in mind, we've put together a list of some of our personal favourite local hotspots, for you to go and check out after you've visited our Hamilton weed dispensary at 22 Tisdale St.
+					S. Of course, you can enjoy any cannabis product anywhere, anytime you'd like. These are just some suggestions we'd make for turning a good time into a great one.
+				</p>
+				<h3>Take a Historical Ghost Walk</h3>
+				<p>
+					Are you a fan of all things spooky and creepy, in addition to your undying love of cannabis? Well, we have good news for you, because VoiceMap Hamilton has put together an audio tour for you
+					to enjoy.
+				</p>
+				<p>Centralized in downtown Hamilton, this walking tour focuses on some of the most prominently haunted buildings and infamous local phantoms within Hamilton's core.</p>
+				<p>
+					For something as bone chilling as this, we'd recommend enjoying an edible ahead of time. Its soothing, relaxing body buzz should help take the edge off any of the heebie-jeebies you might be
+					feeling, while you're learning all about Hamilton's history of hauntings.
+				</p>
+				<figure>
+					<img src="images/article/article-1.jpg" alt="alt" />
+				</figure>
+				<h3>Gage Park Greenhouse</h3>
+				<p>Looking for somewhere to take your sweetheart that's calm, soothing and full of picturesque scenery? Look no further than Gage Park Greenhouse.</p>
+				<p>Not only does the 14,000 square-foot greenhouse have a gorgeous selection of subtropical plants and unique species to ogle, but admission to the beautiful facilities is free!</p>
+				<p>
+					While you're strolling the grounds and enjoying the weather (outside), we'd recommend bringing along a conveniently portable vape pen to toke on. The casual, unobtrusive vape pens we carry
+					are the perfect way to enjoy some cannabis on the go, without drawing a lot of attention to yourself.
+				</p>
+				<p>It also won't leave you smelling like weed. Bonus!</p>
+				<figure>
+					<img src="images/article/article-2.jpg" alt="alt" />
+				</figure>
+				<h3>Take the Hamilton Scavenger Hunt</h3>
+				<p>
+					Are you a master of puzzles? Do you love the thrill of a good old fashioned scavenger hunt? Hamilton Hopper has heard you, and they've put together a scavenger hunt that's sure to please.
+				</p>
+				<p>
+					Not only will you learn a lot about Hamilton's history, but you'll follow an exciting path that will weave its way through all the core areas of Hamilton; from the downtown core, to some of
+					Hamilton’s lovely parks. You'll even get to take in some fantastic public art along the way.
+				</p>
+				<p>
+					We'd suggest bringing along some sativa-dominant cannabis oil with you for this incredible journey. Not only will it help you relax and stay limber for all the walking that you'll need to
+					do, but the sativa elements will provide a much-needed boost of energy, if you're starting to feel groggy halfway through your hunt. Just don't take too much, or you'll end up wanting to
+					take a nap in one of Hamilton's lovely parks.
+				</p>
+				<figure>
+					<img src="images/article/article-3.jpg" alt="alt" />
+				</figure>
+				<h3>Bayfront Park</h3>
+				<p>
+					Since its legalization, cannabis has gone through a massive transformation in the way it's viewed by the public. In many ways, cannabis has begun what's sure to be a long process of
+					de-stigmatization, brought on by years of being looked down on despite its medicinal benefits.
+				</p>
+				<p>With that in mind, Bayfield Park is the perfect place to visit while you're enjoying your cannabis products.</p>
+				<p>Much like cannabis, Bayfield Park has gone through an enormous transformation since the 1960's, changing from a landfill into a stunning public area, full of lovely green space.</p>
+				<p>
+					Pre-rolled joints are perfect for this place. You can enjoy a casual smoke, while you're walking along the water, or strolling on the pier. We'd suggest indica, only because it will help you
+					relax and really soak in the phenomenal views, when you're walking around the park.
+				</p>
+				<figure>
+					<img src="images/article/article-4.jpg" alt="alt" />
+				</figure>
+			</div>
+			<nav class="articles-socials col-lg-3">
+				<ul class="row-center">
+					<li class="col-lg-12"><p>share:</p></li>
+					<li class="col-lg-12">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank" class="push-share" data-id="fb">facebook</a>
+					</li>
+					<li class="col-lg-12">
+						<a href="https://twitter.com/home?status=<?php the_permalink(); ?>" target="_blank" class="push-share" data-id="tw">twitter</a>
+					</li>
+					<li class="col-lg-12">
+						<a href="https://medium.com/p/import?rel=<?php the_permalink(); ?>" class="push-share" target="_blank" data-id="medi">medium</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="social-info" data-url="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" data-desc="description" data-title=" title"></div>
+		</div>
+	</section>
 
-
-
-  @@include('./html-templates/location.html')
-
+	@@include('./html-templates/accent.html') @@include('./html-templates/location.html')
 </main>
 
 @@include('./html-templates/footer.html')

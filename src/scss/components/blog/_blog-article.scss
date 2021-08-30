@@ -1,0 +1,49 @@
+.articles {
+	& > .row {
+		flex-direction: row-reverse;
+		align-items: start;
+	}
+	&-content {
+      margin-bottom: 30px;
+		h3 {
+			@extend .h4;
+			margin-top: 90px;
+			margin-bottom: 20px;
+		}
+		figure {
+			border-radius: $radiusLg;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	&-socials {
+      text-transform: uppercase;
+      font-size: 14px;
+      li {
+         width: auto;
+      }
+      p {
+         margin-bottom: 0;
+         @include lg {
+            margin-bottom: 15px;
+         }
+      }
+		a {
+			@extend .large-link;
+         margin-top: 0;
+         font-size: inherit;
+         padding-top: 6px;
+         padding-bottom: 6px;
+         @include lg {
+            font-size: 18px;
+         }
+			&:hover {
+				&:after {
+					background-color: $hoverLink;
+				}
+			}
+		}
+	}
+}

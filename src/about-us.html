@@ -1,4 +1,4 @@
-@@include('html-templates/head.html',{ title:'About-us', metadesc:'page with very interesting content' })
+@@include('html-templates/head.html',{ title:'About-us', metadesc:'page with very interesting content'})
 
 <main class="about-us-page">
 	<section class="hero">
@@ -30,8 +30,7 @@
 		</div>
 	</section>
 
-	@@include('./html-templates/accent.html')
-	@@include('./html-templates/homepage/card-category.html')
+	@@include('./html-templates/accent.html') @@include('./html-templates/homepage/card-category.html')
 
 	<section class="hero">
 		<div class="container">
@@ -48,9 +47,37 @@
 	</section>
 
 	@@include('./html-templates/services.html')
-	@@include('./html-templates/homepage/about-us.html')
 
-
+	<section class="about-us text-center">
+		<div class="container">
+			<p class="h6">Visit Hamilton's Best Weed Dispensary</p>
+			<h2 class="h2 col-lg-8 centered">We've Got All the Weed Products & Accessories You Need</h2>
+		</div>
+		<div class="about-us-content">
+			<div class="container">
+				<div class="wrapper no-resize col-lg-6 centered white-bg">
+					<div class="content-wrap">
+						<p>
+							If you're looking for affordability, we've got you covered. We're the one weed dispensary in Hamilton that you can count on to have consistently great prices, and incredible customer
+							service.
+						</p>
+						<p>
+							re you in the market for weed pipes or grinders? Do you prefer rolling papers or pre-rolled joints? Are you a fan of vape pens or cannabis topicals? Would cannabis oils or edibles be
+							more in line with the kind of cannabis experience you're trying to achieve?
+						</p>
+						<p>
+							Come in and see us! A helpful Odyssey team member will be glad to get to know you. Once we've had a chance to hear about your preferences, your goals, and your current experience with
+							cannabis, we can make suggestions for you to point you in the right direction.
+						</p>
+					</div>
+					<a href="./livemenu.html" class="btn-lg">Start Shopping Now</a>
+				</div>
+			</div>
+			<div class="bg-image">
+				<div class="about-us-image bg" style="background-image: url(./images/about-us/about-us.png)" aria-label="About-us"></div>
+			</div>
+		</div>
+	</section>
 </main>
 
 @@include('./html-templates/footer.html')

@@ -55,4 +55,31 @@
 		position: relative;
 		z-index: 2;
 	}
+	&.hero-blog {
+		padding-top: 20px;
+		padding-bottom: 0;
+		.blog-inner {
+			border-radius: $radiusLg;
+			overflow: hidden;
+			position: relative;
+		}
+		.blog-image {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		.blog-content {
+			padding: 80px;
+			& > *:not(:last-child) {
+				margin-bottom: 80px;
+			}
+		}
+		.blog-data {
+			font-size: 20px;
+			letter-spacing: $letterSpacingMd;
+			font-family: $fontSecondary;
+			color: $colorWhite;
+		}
+	}
 }

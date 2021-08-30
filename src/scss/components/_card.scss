@@ -2,16 +2,17 @@
    &-item {
        padding-left: 15px;
        padding-right: 15px;
-       margin-bottom: 45px;
+       margin-bottom: 30px;
    }
    &-content {
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       min-height: 410px;
-      justify-content: space-around;
       padding: 30px 50px;
       line-height: $lineHeightLg;
       border-radius: $radiusSm;
+
    }
    .large-link {
       margin-top: 0;

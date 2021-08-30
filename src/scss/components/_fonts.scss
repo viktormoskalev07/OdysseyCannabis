@@ -11,11 +11,11 @@
 
 @font-face {
   font-family: $fontPrimary;
-  src: url('../fonts/Faktum/Faktum-Medium.eot');
-  src: url('../fonts/Faktum/Faktum-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Faktum/Faktum-Medium.ttf') format('truetype'),
-       url('../fonts/Faktum/Faktum-Medium.woff') format('woff'),
-       url('../fonts/Faktum/Faktum-Medium.woff2') format('woff2');
+  src: url('../fonts/Faktum/Faktum-ConMedium.eot');
+  src: url('../fonts/Faktum/Faktum-ConMedium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Faktum/Faktum-ConMedium.ttf') format('truetype'),
+       url('../fonts/Faktum/Faktum-ConMedium.woff') format('woff'),
+       url('../fonts/Faktum/Faktum-ConMedium.woff2') format('woff2');
   font-weight: $weightMedium;
   font-style: normal;
 }
@@ -31,4 +31,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: $fontSecondary;
+  src: url('../fonts/Faktum/Faktum-WideBold.eot');
+  src: url('../fonts/Faktum/Faktum-WideBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Faktum/Faktum-WideBold.ttf') format('truetype'),
+       url('../fonts/Faktum/Faktum-WideBold.woff') format('woff'),
+       url('../fonts/Faktum/Faktum-WideBold.woff2') format('woff2');
+  font-weight: $weightBold;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: $fontSecondary;
+  src: url('../fonts/Faktum/Faktum-WideMedium.eot');
+  src: url('../fonts/Faktum/Faktum-WideMedium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Faktum/Faktum-WideMedium.ttf') format('truetype'),
+       url('../fonts/Faktum/Faktum-WideMedium.woff') format('woff'),
+       url('../fonts/Faktum/Faktum-WideMedium.woff2') format('woff2');
+  font-weight: $weightMedium;
+  font-style: normal;
+}
