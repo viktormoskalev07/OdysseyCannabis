@@ -12,14 +12,10 @@
 			position: static;
 		}
 	}
-	&-subtitle {
-		letter-spacing: 1.8px;
-	}
 	&-text {
 		margin-bottom: 35px;
 		font-size: 18px;
 		line-height: 1.5;
-		letter-spacing: $letterSpacingMd;
 	}
 	&-content,
 	&-subtitle,
@@ -50,8 +46,7 @@
 			}
 		}
 	}
-	 + .location {
-		 padding-top: 0;
+	+ .location {
 		position: relative;
 		z-index: 2;
 	}
@@ -78,8 +73,20 @@
 		.blog-data {
 			font-size: 20px;
 			letter-spacing: $letterSpacingMd;
-			font-family: $fontSecondary;
 			color: $colorWhite;
+		}
+	}
+	&.hero-about-us {
+		padding-bottom: 0;
+		@include lg {
+			padding-bottom: 85px;
+		}
+		.hero-title {
+			margin-bottom: 30px;
+		}
+		.hero-text {
+			margin-bottom: 0;
+			line-height: $lineHeightLg;
 		}
 	}
 }
