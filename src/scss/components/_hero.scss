@@ -21,7 +21,8 @@
 	&-content,
 	&-subtitle,
 	&-title,
-	&-text {
+	&-text,
+	.btn-lg {
 		@include lg {
 			position: relative;
 			z-index: 1;

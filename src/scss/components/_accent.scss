@@ -23,14 +23,9 @@
 	}
 	&-image {
 		width: 100%;
-		margin-bottom: 50px;
-		padding-bottom: 19%;
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		@include lg {
-			margin-bottom: 10px;
-		}
 	}
 	&-bg {
 		padding-bottom: 85%;

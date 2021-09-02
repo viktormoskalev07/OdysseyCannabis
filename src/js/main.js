@@ -58,3 +58,7 @@ if (document.querySelector('.preloader')) {
 }
 //preloader
 
+window.addEventListener('load', function() {
+	document.body.classList.remove('transition-none')
+})
+
