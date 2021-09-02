@@ -38,44 +38,23 @@
 }
 .wrapper {
 	border-radius: $radiusSm;
-	padding: 30px 15px 100px;
+	padding: 30px 15px 25px;
 	position: relative;
 	z-index: 1;
-	&:after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 20px;
-		position: absolute;
-		left: 0;
-		bottom: 100px;
-		background: linear-gradient(180deg, rgba($colorWhite, 0) 0%, $colorWhite 100%);
-	}
 	@include lg {
-		padding: 70px 25px 120px;
+		padding: 70px 25px 25px;
 	}
 	&.no-resize {
-			padding: 30px 15px 20px;
 		&::after {
 			content: none;
-		}
-		@include lg {
-			padding: 60px;
-		}
-		.btn-lg {
-			margin-top: 30px;
 		}
 	}
 }
 .content {
-	height: 200px;
+	height: 0;
 	overflow: hidden;
 	transition: all 1s ease;
 	&-btn {
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		z-index: 1;
-		transform: translateX(-50%);
+		margin: 50px auto 20px;
 	}
 }

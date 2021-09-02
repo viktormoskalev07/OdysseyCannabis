@@ -15,6 +15,7 @@ window.onload = function(){
 @@include('modules/accordion.js');
 @@include('modules/fetch-inst.js');
 @@include('modules/share.js');
+@@include('modules/content-toggle.js');
 
 function hidescroll() {
 	body.style.paddingRight = window.innerWidth - html.offsetWidth + 'px';
@@ -57,31 +58,3 @@ if (document.querySelector('.preloader')) {
 }
 //preloader
 
-
-// Show more/less button
-let toggles = document.querySelector('.content-btn')
-let contentDiv = document.querySelector('.content')
-let contentWrap = document.querySelector('.content-wrap')
-let contentHeight = 200
-
-if (contentWrap.hasChildNodes()) {
-	let children = contentWrap.childNodes
-	if (children.length >= 3) {
-		toggles.classList.add('show')
-		toggles.addEventListener('click', () => {
-			if (parseInt(contentDiv.style.height) != contentDiv.scrollHeight) {
-				contentDiv.style.height = contentDiv.scrollHeight + 'px'
-				toggles.classList.toggle('activeBtn');
-			} else {
-				contentDiv.style.height = contentHeight + 'px'
-				toggles.classList.toggle('activeBtn');
-				contentDiv.classList.toggle('heightActive')
-			}
-		})
-	} else {
-		toggles.classList.remove('show')
-		toggles.classList.add('hide')
-		contentDiv.style.height = 'auto'
-	}
-}
-// Show more/less button

@@ -1,20 +1,22 @@
 .card {
-   &-item {
-       padding-left: 15px;
-       padding-right: 15px;
-       margin-bottom: 30px;
-   }
-   &-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      min-height: 410px;
-      padding: 30px 50px;
-      line-height: $lineHeightLg;
-      border-radius: $radiusSm;
-
-   }
-   .large-link {
-      margin-top: 0;
-   }
+	&-item {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 30px;
+	}
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		min-height: 410px;
+      padding: 30px;
+		line-height: $lineHeightLg;
+		border-radius: $radiusSm;
+		@include lg {
+			padding: 30px 50px;
+		}
+	}
+	.large-link {
+		margin-top: 0;
+	}
 }
