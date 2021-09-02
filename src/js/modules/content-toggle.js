@@ -45,7 +45,6 @@ function contentToggleInit(toggle) {
 			window.addEventListener('resize', () => {
 				if (contentDiv.classList.contains('opened')) {
 					contentDiv.style.height = contentWrap.scrollHeight + 15 + 'px'
-					console.log(parseInt(contentDiv.style.height))
 				}
 			})
 		} else {
