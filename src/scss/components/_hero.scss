@@ -35,15 +35,12 @@
 			z-index: 1;
 		}
 	}
-	&-text {
-
-	}
 	.btn-lg {
 		order: 1;
 		margin-bottom: 35px;
 		@include lg {
 			order: 2;
-			margin-left: 0;
+			margin-left: 15px;
 			margin-bottom: 0;
 		}
 	}
