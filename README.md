@@ -1,1 +1,1 @@
-https://viktormoskalev07.github.io/uncleHerbs/build
+https://viktormoskalev07.github.io/uncleHerbs/dist
