@@ -78,6 +78,9 @@
 				bottom: 3px;
 				background-color: $colorWhite;
 			}
+			&[href=''] {
+				display: none;
+			}
 		}
 	}
 	&-copy {
